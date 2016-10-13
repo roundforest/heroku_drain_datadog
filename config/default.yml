@@ -2,12 +2,12 @@
 router:
   metrics:
     - heroku_name: connect
-      datadog_name: heroku.router.connect
+      datadog_name: rf.comparison.heroku.router.connect
       enabled: true
       type: float
       metric: histogram
     - heroku_name: service
-      datadog_name: heroku.router.service
+      datadog_name: rf.comparison.heroku.router.service
       enabled: true
       type: float
       metric: histogram
@@ -21,42 +21,42 @@ router:
 dyno:
   metrics:
     - heroku_name: "sample#memory_cache"
-      datadog_name: heroku.dyno.memory_cache
+      datadog_name: rf.comparison.heroku.dyno.memory_cache
       enabled: true
       type: float
       metric: gauge
     - heroku_name: "sample#memory_quota"
-      datadog_name: heroku.dyno.memory_quota
+      datadog_name: rf.comparison.heroku.dyno.memory_quota
       enabled: true
       type: float
       metric: gauge
     - heroku_name: "sample#memory_rss"
-      datadog_name: heroku.dyno.memory_rss
+      datadog_name: rf.comparison.heroku.dyno.memory_rss
       enabled: true
       type: float
       metric: gauge
     - heroku_name: "sample#memory_swap"
-      datadog_name: heroku.dyno.memory_swap
+      datadog_name: rf.comparison.heroku.dyno.memory_swap
       enabled: true
       type: float
       metric: gauge
     - heroku_name: "sample#memory_total"
-      datadog_name: heroku.dyno.memory_total
+      datadog_name: rf.comparison.heroku.dyno.memory_total
       enabled: true
       type: float
       metric: gauge
     - heroku_name: "sample#load_avg_1m"
-      datadog_name: heroku.dyno.load_avg_1m
+      datadog_name: rf.comparison.heroku.dyno.load_avg_1m
       enabled: true
       type: float
       metric: gauge
     - heroku_name: "sample#load_avg_5m"
-      datadog_name: heroku.dyno.load_avg_5m
+      datadog_name: rf.comparison.heroku.dyno.load_avg_5m
       enabled: true
       type: float
       metric: gauge
     - heroku_name: "sample#load_avg_15m"
-      datadog_name: heroku.dyno.load_avg_15m
+      datadog_name: rf.comparison.heroku.dyno.load_avg_15m
       enabled: true
       type: float
       metric: gauge
