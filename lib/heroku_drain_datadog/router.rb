@@ -20,7 +20,8 @@ module HerokuDrainDatadog
           # POST /logs
           r.post "logs" do
             default_tags = derive_default_tags(r.env["HTTP_LOGPLEX_DRAIN_TOKEN"])
-            controller = Controller.new(config: config, logger: logger, statsd: statsd)
+            user = Rack::Auth::Basic::Request.new(request.env).username
+            controller = Controller.new(config: config, logger: logger, statsd: statsd, user: user)
             controller.call(request.body.read, default_tags: default_tags)
             response.status = 204
           end
