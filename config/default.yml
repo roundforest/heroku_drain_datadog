@@ -15,7 +15,6 @@ router:
     - dyno
     - method
     - host
-    - path
     - status
 
 dyno:
